@@ -1,4 +1,4 @@
-NAME = hello_world
+NAME = test
 CC = gcc
 CFLAGS = -Wall -Wextra -I/usr/include -Imlx_linux -O3 -g -fsanitize=address,undefined # -Wall -Wextra -Werror
 LDFLAGS = -Lmlx_linux -lmlx_Linux -L/usr/lib -Imlx_linux -lXext -lX11 -lm -lz
