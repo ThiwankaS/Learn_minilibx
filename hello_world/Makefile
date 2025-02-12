@@ -5,7 +5,14 @@ LDFLAGS = -Lmlx_linux -lmlx_Linux -L/usr/lib -Imlx_linux -lXext -lX11 -lm -lz
 #assuming the directory name containing the https://github.com/42Paris/minilibx-linux?tab=BSD-2-Clause-1-ov-file libry
 # is mlx_linux
 
-SRCS = hello_world.c
+SRCS = \
+	hello_world.c\
+	circle.c\
+	utilities.c\
+	line.c\
+	triangle.c\
+	hexagon.c\
+
 OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
@@ -22,6 +29,6 @@ clean:
 fclean: clean
 	rm -f $(NAME)
 
-re: fclean
+re: fclean all
 
 .PHONY: all clean fclean re
